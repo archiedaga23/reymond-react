@@ -1,0 +1,103 @@
+.cards {
+    width: 100%;
+    background-color: #eee;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+.cards .card {
+    gap: 12px;
+    height: 300px;
+    background-color: #FFF36D;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.cards .add-card {
+    background-color: #B3E6B5;
+    padding: 1rem;
+}
+
+.cards .card .delete-btn {
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+    cursor: pointer;
+}
+
+.update-btn {
+    position: absolute;
+    bottom: 13px;
+    right: 36px;
+    cursor: pointer;
+}
+
+.cards .add-card .add-input {
+    background: none !important;
+    border: none;
+    border-style: none;
+    cursor: pointer;
+}
+
+.cards .add-card .add-input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
+
+.update-input {
+    background: none !important;
+    border: none;
+    border-style: none;
+    cursor: pointer;
+}
+
+.update-input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
+
+.cards .add-card .add-button {
+    position: absolute;
+    right: 13px;
+    bottom:13px;
+}
+
+.my-note {
+    width: 50%;
+    height: 50vh;
+    margin: 10rem auto;
+}
+
+#id {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+}
+
+.back-btn {
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+}   
+
+@media (max-width: 986px) {
+        .cards {
+            grid-template-columns: repeat(2, 1fr);    
+        }
+        .my-note {
+            width: 75%;
+        }
+        
+}
+
+@media (max-width: 700px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);    
+    }
+    .my-note {
+        width: 100%;
+    }
+}
